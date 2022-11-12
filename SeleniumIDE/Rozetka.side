@@ -1,0 +1,565 @@
+{
+  "id": "a8531e8a-03d7-44e9-a997-a8a7ba035412",
+  "version": "2.0",
+  "name": "Rozetka",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "4ccaf8f6-23ad-4a45-b3d9-6c2cf7e74f5d",
+    "name": "Search Notebook HP",
+    "commands": [{
+      "id": "0744ede3-be5d-4b4a-8f82-0ecf55bbdd4b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d3794b1-1652-40a3-be31-e8719ff1d412",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4e1596a-a401-464f-b490-47c126776a4a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"fat-menu\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c419a590-e55a-45a7-a284-c1bec38dabaf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//*[@id=\"fat-menu\"]",
+      "targets": [
+        ["css=.help-zsu > img", "css:finder"],
+        ["xpath=//img[@alt='Повернись живим']", "xpath:img"],
+        ["xpath=//div/ul/li[2]/a/img", "xpath:position"]
+      ],
+      "value": "Каталог"
+    }, {
+      "id": "2716b7ad-f76c-4ced-9dfb-daae746e906f",
+      "comment": "",
+      "command": "store",
+      "target": "Ноутбук",
+      "targets": [],
+      "value": "header1"
+    }, {
+      "id": "1c462eff-79ca-42e0-819f-185f43870a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-form__input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ab13a4-0ac6-4896-9493-4e092b96f70c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.search-form__input",
+      "targets": [],
+      "value": "${header1}"
+    }, {
+      "id": "5cea86d2-5197-4cc0-8494-2f835fb0f7db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0228482-1c8d-4bf7-af04-6a193e815841",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HP",
+      "targets": [
+        ["linkText=HP", "linkText"],
+        ["css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(5) > .checkbox-filter__link", "css:finder"],
+        ["xpath=//a[contains(text(),'HP')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/notebooks/c80004/producer=hp-hewlett-packard/')]", "xpath:href"],
+        ["xpath=//rz-filter-section-autocomplete/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HP ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c4e3fc3-a389-46a6-bd0a-3f234f2d0438",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8b856a38-7dea-468a-a9cf-76768d90b7db",
+    "name": "Communication with the Team from Telegram",
+    "commands": [{
+      "id": "bb50898c-73de-45eb-b4ac-e584587330f3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1432aefb-557a-46d9-ad65-8c1edcf44466",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socials__link--facebook",
+      "targets": [
+        ["css=.socials__link--facebook", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/rozetka.ua')]", "xpath:href"],
+        ["xpath=//rz-social-icons/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1fe6bf0-608e-4815-8a55-c9c80853abf5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.socials__link--twitter",
+      "targets": [
+        ["css=.socials__link--twitter", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/rozetka_ua')]", "xpath:href"],
+        ["xpath=//rz-social-icons/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80db4f71-db95-4d34-8b30-019b31cb4a21",
+      "comment": "",
+      "command": "store",
+      "target": "Ми в соціальних мережах",
+      "targets": [],
+      "value": "header2"
+    }, {
+      "id": "e2b4a978-cb62-42b5-99bd-28fc2422f2a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.main-sidebar__block > .main-sidebar__heading",
+      "targets": [
+        ["css=.main-sidebar__block > .main-sidebar__heading", "css:finder"],
+        ["xpath=//div[4]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Ми в соціальних мережах')]", "xpath:innerText"]
+      ],
+      "value": "${header2}"
+    }, {
+      "id": "5f523453-b8f0-4277-bc0f-444414053254",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://t.me/rrozetka')]",
+      "targets": [
+        ["css=.socials__link--telegram", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://t.me/rrozetka')]", "xpath:href"],
+        ["xpath=//rz-social-icons/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78a28275-0e20-495e-aa02-05aeee90f9b1",
+      "comment": "",
+      "command": "store",
+      "target": "header3",
+      "targets": [],
+      "value": "Hello Team"
+    }, {
+      "id": "9407bcde-0484-4f48-bf46-1e7ab0eee7f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=@Rozetka_helpBot",
+      "targets": [
+        ["linkText=@Rozetka_helpBot", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'@Rozetka_helpBot')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://t.me/Rozetka_helpBot')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'@Rozetka_helpBot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e98c53-d7e4-49e9-ac63-31688b370332",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "859c0c78-30dd-4ff4-ae61-1b806167ec4b",
+    "name": "Burger menu",
+    "commands": [{
+      "id": "476fedc7-6422-429e-956b-ce82082c4a85",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6b41243-aa5e-4336-8b2f-422b73771e96",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[@type='button']",
+      "targets": [
+        ["css=.header-menu > .header__button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf1ed252-2b6c-46e3-9b05-1aa1fa65ecfe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='button']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96bcffe0-fd16-450c-8e3a-82b161ef1fd9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"fat-menu\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bdde1fa-193b-4010-b998-88f96e963b43",
+      "comment": "",
+      "command": "store",
+      "target": "Каталог товарів",
+      "targets": [],
+      "value": "header3"
+    }, {
+      "id": "3d5cddf3-e34d-4341-bf79-266bf302e296",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.side-menu__item > #fat-menu",
+      "targets": [
+        ["css=.side-menu__item > #fat-menu", "css:finder"],
+        ["xpath=(//button[@id='fat-menu'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/ul/li/button", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li/button", "xpath:position"]
+      ],
+      "value": "${header3}"
+    }, {
+      "id": "62bc9e3b-f1c6-40f7-a08f-fb01cc910a59",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"cdk-overlay-0\"]/nav/div/div[2]/ul[2]/li[1]/div[2]/p",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1993da4a-d8e8-464b-8571-8c5927acc543",
+      "comment": "",
+      "command": "click",
+      "target": "css=.city-toggle > svg",
+      "targets": [
+        ["css=.city-toggle > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5485de47-eca7-46cf-a882-3918fd912ba4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Запоріжжя",
+      "targets": [
+        ["linkText=Запоріжжя", "linkText"],
+        ["css=.header-location__popular-item:nth-child(5) > .header-location__popular-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Запоріжжя')]", "xpath:link"],
+        ["xpath=//common-city/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Запоріжжя')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d0427dd-7aa5-42b7-9ab2-5ff24f17c9da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-location__footer > .button_color_green",
+      "targets": [
+        ["css=.header-location__footer > .button_color_green", "css:finder"],
+        ["xpath=//fieldset/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Застосувати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "411bb4d0-9b83-40fb-9fab-99c7465aa8e5",
+      "comment": "",
+      "command": "store",
+      "target": "Запоріжжя",
+      "targets": [],
+      "value": "header5"
+    }, {
+      "id": "c608c3d8-abfa-4e1d-9cc7-3a04e7fc9fa0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='button']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90e49a08-3625-4a01-ae60-dd4fa9affe42",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.city-toggle__text",
+      "targets": [
+        ["css=.city-toggle__text", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-1']/nav/div/div[2]/ul[2]/li/div[2]/rz-city/button/span", "xpath:idRelative"],
+        ["xpath=//rz-city/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Запоріжжя')]", "xpath:innerText"]
+      ],
+      "value": "${header5}"
+    }, {
+      "id": "55ef1f1c-ff06-4c89-8f11-8e0feceb60b7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2b8acea9-355b-413c-9bb3-eec0bf2829dd",
+    "name": "Language site",
+    "commands": [{
+      "id": "8dc781b2-3565-49f3-b5a1-ef2a9d9d355f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed909351-1fb4-4e01-b2d1-84dd90d5fe66",
+      "comment": "",
+      "command": "store",
+      "target": "UA",
+      "targets": [],
+      "value": "lang1"
+    }, {
+      "id": "119cf77e-e902-4395-9038-c4ce586ab832",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.lang__link--active",
+      "targets": [
+        ["css=.lang__link--active", "css:finder"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'UA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df7ff57f-cf6d-4a74-983f-7e5e07bd4d54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=UA",
+      "targets": [
+        ["linkText=UA", "linkText"],
+        ["css=.lang__item:nth-child(2) > .lang__link", "css:finder"],
+        ["xpath=//a[contains(text(),'UA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/')]", "xpath:href"],
+        ["xpath=//rz-lang/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'UA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c707b814-ea90-40ac-977c-e0219decfee8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.lang__link--active",
+      "targets": [
+        ["css=.lang__link--active", "css:finder"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'UA')]", "xpath:innerText"]
+      ],
+      "value": "${lang1}"
+    }, {
+      "id": "e70baad6-2c17-4591-a932-552d8b224193",
+      "comment": "",
+      "command": "store",
+      "target": "RU",
+      "targets": [],
+      "value": "lang2"
+    }, {
+      "id": "dc54083f-1ad4-4044-a7c7-ea42be7035e3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=RU",
+      "targets": [
+        ["linkText=RU", "linkText"],
+        ["css=.lang__item:nth-child(1) > .lang__link", "css:finder"],
+        ["xpath=//a[contains(text(),'RU')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/')])[19]", "xpath:href"],
+        ["xpath=//rz-lang/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'RU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d9b4754-b77b-4c43-b743-120cd25f0101",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=RU",
+      "targets": [],
+      "value": "${lang2}"
+    }, {
+      "id": "f45602d9-256d-40d1-a13a-9f05f9e22213",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=RU",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e464112-3608-4d85-8474-6f12824128d0",
+      "comment": "",
+      "command": "store",
+      "target": " Довідковий центр",
+      "targets": [],
+      "value": "val"
+    }, {
+      "id": "606865a7-dc3b-4ef8-896e-5bad0a5c81e2",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "linkText=Довідковий центр",
+      "targets": [],
+      "value": "${val}"
+    }, {
+      "id": "03068cb4-09cb-41c3-b2d3-a714018ba661",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c5e1a0f4-59bc-4b18-b9ad-a227c7c537bf",
+    "name": "Enter aсcount",
+    "commands": [{
+      "id": "717479a9-564a-4f7c-b50e-8dc9bd2b0c27",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "936ca399-1b46-4e13-8d83-5e94a18e557d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.header-actions__item--user .header__button",
+      "targets": [
+        ["css=.header-actions__item--user .header__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//rz-user/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38102e38-adba-476b-8d74-7fc3a17df64b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions__item--user .header__button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8466292-00a2-4dd7-a4b8-57853bde03a3",
+      "comment": "",
+      "command": "store",
+      "target": "Увійти як користувач",
+      "targets": [],
+      "value": "logIN"
+    }, {
+      "id": "ebc8d3ab-43f8-4b47-848e-fe2a6d4db659",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//p[contains(.,'Увійти як користувач')]",
+      "targets": [
+        ["css=.auth-modal__social-label", "css:finder"],
+        ["xpath=//div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Увійти як користувач')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dfead91-d4b0-4084-8708-4392352d6018",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.auth-modal__social-label",
+      "targets": [],
+      "value": "${logIN}"
+    }, {
+      "id": "dc2b72fc-8712-42c5-bb11-a936abbcf39e",
+      "comment": "",
+      "command": "store",
+      "target": "Google",
+      "targets": [],
+      "value": "Google"
+    }, {
+      "id": "bf688619-6bb6-4447-9955-93fe53e5d950",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.button--large:nth-child(2)",
+      "targets": [
+        ["css=.button--large:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//rz-social-auth/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "015b230d-2c5f-4b37-86a0-e2abad7c811c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.button--large:nth-child(2)",
+      "targets": [],
+      "value": "${Google}"
+    }, {
+      "id": "9f03d31b-7089-4e2a-97bb-be92e71be9c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--large:nth-child(2)",
+      "targets": [
+        ["css=.button--large:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[24]", "xpath:attributes"],
+        ["xpath=//rz-social-auth/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a32dae7f-d6e8-455b-b5b6-becfca266fb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-menu > .header__button",
+      "targets": [
+        ["css=.header-menu > .header__button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec5b1795-84d6-40b3-b233-b94d6a3eb01f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[21]",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e1d00c-7d32-4dd1-9c0a-b7ae92d61558",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "88514517-880d-4798-8e2c-792fb5e363dd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4ccaf8f6-23ad-4a45-b3d9-6c2cf7e74f5d"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
